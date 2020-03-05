@@ -9,7 +9,18 @@ class App extends React.Component {
         super(props);
     }
 
+    onClickButton = async () => {
+        const { dispatch } = this.props;
+        await dispatch({
+            type: 'index/onClickButton',
+            payload: {
+                id: '1478',
+            },
+        });
+    };
+
     render() {
+        let self = this;
         const { common, index, user } = this.props;
         console.log(index.show);
         return (
@@ -18,7 +29,12 @@ class App extends React.Component {
                 <div className={styles.title}>{user.show}</div>
                 <div className={styles.title}>{common.show}</div>
                 <div>
-                    <Button type="primary">Primary</Button>
+                    <Button
+                        type="primary"
+                        onClick={self.onClickButton.bind(self)}
+                    >
+                        Primary
+                    </Button>
                 </div>
                 <div>
                     <DatePicker />
