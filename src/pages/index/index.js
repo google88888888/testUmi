@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'dva';
-import { Button, DatePicker } from 'antd';
+import { ConfigProvider, Button, DatePicker } from 'antd';
 import styles from './index.less';
+import zhCN from 'antd/es/locale/zh_CN';
 
 @connect(({ index, user }) => ({ index, user }))
 class App extends React.Component {
@@ -13,16 +14,18 @@ class App extends React.Component {
         const { index, user } = this.props;
         console.log(index.show);
         return (
-            <div>
-                <div className={styles.title}>{index.show}</div>
-                <div className={styles.title}>{user.show}</div>
+            <ConfigProvider locale={zhCN}>
                 <div>
-                    <Button type="primary">Primary</Button>
+                    <div className={styles.title}>{index.show}</div>
+                    <div className={styles.title}>{user.show}</div>
+                    <div>
+                        <Button type="primary">Primary</Button>
+                    </div>
+                    <div>
+                        <DatePicker />
+                    </div>
                 </div>
-                <div>
-                    <DatePicker />
-                </div>
-            </div>
+            </ConfigProvider>
         );
     }
 }
