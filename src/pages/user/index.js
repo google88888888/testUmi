@@ -1,21 +1,19 @@
 import React from 'react';
-import { connect } from 'dva'
+import { connect } from 'dva';
 import styles from './index.less';
 
-@connect(({user}) => ({user}))
+@connect(({ user }) => ({ user }))
 class App extends React.Component {
     constructor(props) {
         super(props);
-    
     }
 
-
     render() {
-        const {show} = this.props;
-        console.log(show);
+        const { user } = this.props;
+        console.log(user.show);
         return (
             <div>
-                <div className={styles.title}>{show}</div>
+                <div className={styles.title}>{user.show}</div>
             </div>
         );
     }
