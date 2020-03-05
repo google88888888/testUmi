@@ -11,8 +11,6 @@ class App extends React.Component {
     render() {
         const { user } = this.props;
         console.log(user.show);
-        console.log(user.show);
-        console.log('11111');
         return (
             <div>
                 <div className={styles.title}>{user.show}</div>
