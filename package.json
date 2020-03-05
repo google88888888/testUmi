@@ -23,6 +23,7 @@
   "dependencies": {
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.0.3",
+    "antd": "^4.0.1",
     "dva": "^2.6.0-beta.6",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
