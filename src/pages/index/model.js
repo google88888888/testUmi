@@ -1,5 +1,4 @@
-//import Request from '@/api/request'
-import { onClickButton } from '@/api/request';
+import request from '@/api/request';
 
 export default {
     namespace: 'index',
@@ -17,7 +16,7 @@ export default {
             console.log(common.show);
             console.log(index.show);
 
-            const { State, Result } = yield call(onClickButton, {
+            const { State, Result } = yield call(request.onClickButton, {
                 id: action.payload.id,
             });
             console.log('11111111111111111111');
