@@ -12,7 +12,7 @@ class App extends React.Component {
     onClickButton = async () => {
         const { dispatch } = this.props;
         await dispatch({
-            type: 'index/onClickButton',
+            type: 'index/getIstopOrderDetail',
             payload: {
                 id: '1478',
             },

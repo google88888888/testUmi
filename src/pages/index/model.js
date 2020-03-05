@@ -11,15 +11,15 @@ export default {
         },
     },
     effects: {
-        *onClickButton(action, { call, put, select }) {
+        *getIstopOrderDetail(action, { call, put, select }) {
             const { common, index } = yield select(state => state);
             console.log(common.show);
             console.log(index.show);
 
-            const { State, Result } = yield call(request.onClickButton, {
+            const Result = yield call(request.getIstopOrderDetail, {
                 id: action.payload.id,
             });
-            console.log('11111111111111111111');
+            console.log('22222222222222');
             console.log(Result);
         },
     },
