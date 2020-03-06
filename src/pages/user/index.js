@@ -11,10 +11,10 @@ class App extends React.Component {
 
     render() {
         const { user } = this.props;
-        console.log(user.show);
+        console.log(user.index.show);
         return (
             <div>
-                <div className={styles.title}>{user.show}</div>
+                <div className={styles.title}>{user.index.show}</div>
                 <div>
                     <DatePicker />
                 </div>

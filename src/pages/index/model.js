@@ -3,7 +3,9 @@ import request from '@/libs/request';
 export default {
     namespace: 'index',
     state: {
-        show: 'indexShow111',
+        index: {
+            show: 'indexShow111',
+        },
     },
     reducers: {
         save(state, action) {

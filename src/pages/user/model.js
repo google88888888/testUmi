@@ -1,7 +1,9 @@
 export default {
     namespace: 'user',
     state: {
-        show: 'userShow',
+        index: {
+            show: 'userShow',
+        },
     },
     reducers: {
         save(state, action) {
