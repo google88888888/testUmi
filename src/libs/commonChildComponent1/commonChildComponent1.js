@@ -34,9 +34,13 @@ class App extends React.Component {
         const { common, index, user } = this.props;
         return (
             <div>
-                <div className={styles.title}>commonChildComponent1</div>
-                <div className={styles.title}>{common.main.show}</div>
-                <div className={styles.title}>
+                <div className={styles.title_div_commonChildComponent1}>
+                    commonChildComponent1
+                </div>
+                <div className={styles.title_div_commonChildComponent1}>
+                    {common.main.show}
+                </div>
+                <div className={styles.title_div_commonChildComponent1}>
                     {common.commonChildComponent1.show}
                 </div>
                 <div>

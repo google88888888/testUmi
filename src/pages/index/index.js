@@ -36,9 +36,15 @@ class App extends React.Component {
         const { common, index, user } = this.props;
         return (
             <div>
-                <div className={styles.title}>{index.main.show}</div>
-                <div className={styles.title}>{user.main.show}</div>
-                <div className={styles.title}>{common.main.show}</div>
+                <div className={styles.title_div_indexMain}>
+                    {index.main.show}
+                </div>
+                <div className={styles.title_div_indexMain}>
+                    {user.main.show}
+                </div>
+                <div className={styles.title_div_indexMain}>
+                    {common.main.show}
+                </div>
                 <div>
                     <Button
                         type="primary"
