@@ -10,11 +10,21 @@ class App extends React.Component {
     }
 
     onClickButton = async () => {
-        const { dispatch } = this.props;
+        const { dispatch, index } = this.props;
         await dispatch({
             type: 'index/getIstopOrderDetail',
             payload: {
                 id: '1478',
+            },
+        });
+
+        await dispatch({
+            type: 'index/save',
+            payload: {
+                indexChildComponent1: {
+                    ...index.indexChildComponent1,
+                    show: 'indexChildComponent1Of222',
+                },
             },
         });
     };
@@ -25,8 +35,12 @@ class App extends React.Component {
         console.log(index.show);
         return (
             <div>
-                <div className={styles.title}>{index.show}</div>
-                <div className={styles.title}>{user.show}</div>
+                <div className={styles.title}>indexChildComponent1</div>
+                <div className={styles.title}>{index.index.show}</div>
+                <div className={styles.title}>
+                    {index.indexChildComponent1.show}
+                </div>
+                <div className={styles.title}>{user.index.show}</div>
                 <div className={styles.title}>{common.show}</div>
                 <div>
                     <Button

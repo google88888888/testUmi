@@ -6,6 +6,9 @@ export default {
         index: {
             show: 'indexShow111',
         },
+        indexChildComponent1: {
+            show: 'indexChildComponent1Of111',
+        },
     },
     reducers: {
         save(state, action) {
