@@ -39,7 +39,7 @@ class App extends React.Component {
             <div>
                 <div className={styles.title}>{index.index.show}</div>
                 <div className={styles.title}>{user.index.show}</div>
-                <div className={styles.title}>{common.show}</div>
+                <div className={styles.title}>{common.index.show}</div>
                 <div>
                     <Button
                         type="primary"

@@ -36,7 +36,7 @@ class App extends React.Component {
         return (
             <div>
                 <div className={styles.title}>commonChildComponent1</div>
-                <div className={styles.title}>{common.show}</div>
+                <div className={styles.title}>{common.index.show}</div>
                 <div className={styles.title}>
                     {common.commonChildComponent1.show}
                 </div>

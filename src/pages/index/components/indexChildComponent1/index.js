@@ -41,7 +41,7 @@ class App extends React.Component {
                     {index.indexChildComponent1.show}
                 </div>
                 <div className={styles.title}>{user.index.show}</div>
-                <div className={styles.title}>{common.show}</div>
+                <div className={styles.title}>{common.index.show}</div>
                 <div>
                     <Button
                         type="primary"
