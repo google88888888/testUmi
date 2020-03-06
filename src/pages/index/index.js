@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'dva';
 import { Button, DatePicker } from 'antd';
-import IndexChildComponent1 from './components/indexChildComponent1/index.js';
-import CommonChildComponent1 from '@/libs/commonChildComponent1/index.js';
+import IndexChildComponent1 from './components/indexChildComponent1/indexChildComponent1.js';
+import CommonChildComponent1 from '@/libs/commonChildComponent1/commonChildComponent1.js';
 import styles from './index.less';
 
 @connect(({ common, index, user }) => ({ common, index, user }))

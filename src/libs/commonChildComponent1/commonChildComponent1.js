@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
 import { Button, DatePicker } from 'antd';
-import styles from './index.less';
+import styles from './commonChildComponent1.less';
 
 @connect(({ common, index, user }) => ({ common, index, user }))
 class App extends React.Component {

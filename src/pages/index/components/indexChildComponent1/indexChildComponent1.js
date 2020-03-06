@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
 import { Button, DatePicker } from 'antd';
-import styles from './index.less';
+import styles from './indexChildComponent1.less';
 
 @connect(({ common, index, user }) => ({ common, index, user }))
 class App extends React.Component {
@@ -34,13 +34,21 @@ class App extends React.Component {
         const { common, index, user } = this.props;
         return (
             <div>
-                <div className={styles.title}>indexChildComponent1</div>
-                <div className={styles.title}>{index.main.show}</div>
-                <div className={styles.title}>
+                <div className={styles.title_indexChildComponent1}>
+                    indexChildComponent1
+                </div>
+                <div className={styles.title_indexChildComponent1}>
+                    {index.main.show}
+                </div>
+                <div className={styles.title_indexChildComponent1}>
                     {index.indexChildComponent1.show}
                 </div>
-                <div className={styles.title}>{user.main.show}</div>
-                <div className={styles.title}>{common.main.show}</div>
+                <div className={styles.title_indexChildComponent1}>
+                    {user.main.show}
+                </div>
+                <div className={styles.title_indexChildComponent1}>
+                    {common.main.show}
+                </div>
                 <div>
                     <Button
                         type="primary"
