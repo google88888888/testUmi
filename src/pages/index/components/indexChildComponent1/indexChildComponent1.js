@@ -38,16 +38,16 @@ class App extends React.Component {
                     indexChildComponent1
                 </div>
                 <div className={styles.title_div_indexChildComponent1}>
-                    {index.main.show}
+                    {index.indexMain.show}
                 </div>
                 <div className={styles.title_div_indexChildComponent1}>
                     {index.indexChildComponent1.show}
                 </div>
                 <div className={styles.title_div_indexChildComponent1}>
-                    {user.main.show}
+                    {user.userMain.show}
                 </div>
                 <div className={styles.title_div_indexChildComponent1}>
-                    {common.main.show}
+                    {common.commonMain.show}
                 </div>
                 <div>
                     <Button

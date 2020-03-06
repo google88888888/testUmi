@@ -38,7 +38,7 @@ class App extends React.Component {
                     commonChildComponent1
                 </div>
                 <div className={styles.title_div_commonChildComponent1}>
-                    {common.main.show}
+                    {common.commonMain.show}
                 </div>
                 <div className={styles.title_div_commonChildComponent1}>
                     {common.commonChildComponent1.show}
