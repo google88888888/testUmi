@@ -1,4 +1,4 @@
-import request from '@/api/request';
+import request from '@/libs/request';
 
 export default {
     namespace: 'index',
