@@ -23,8 +23,8 @@ class App extends React.Component {
         await dispatch({
             type: 'index/save',
             payload: {
-                index: {
-                    ...index.index,
+                main: {
+                    ...index.main,
                     show: 'indexShow222',
                 },
             },
@@ -36,9 +36,9 @@ class App extends React.Component {
         const { common, index, user } = this.props;
         return (
             <div>
-                <div className={styles.title}>{index.index.show}</div>
-                <div className={styles.title}>{user.index.show}</div>
-                <div className={styles.title}>{common.index.show}</div>
+                <div className={styles.title}>{index.main.show}</div>
+                <div className={styles.title}>{user.main.show}</div>
+                <div className={styles.title}>{common.main.show}</div>
                 <div>
                     <Button
                         type="primary"

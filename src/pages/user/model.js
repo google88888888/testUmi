@@ -1,7 +1,7 @@
 export default {
     namespace: 'user',
     state: {
-        index: {
+        main: {
             show: 'userShow',
         },
     },

@@ -3,7 +3,7 @@ import request from '@/libs/request';
 export default {
     namespace: 'index',
     state: {
-        index: {
+        main: {
             show: 'indexShow111',
         },
         indexChildComponent1: {

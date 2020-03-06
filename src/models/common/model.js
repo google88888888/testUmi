@@ -1,7 +1,7 @@
 export default {
     namespace: 'common',
     state: {
-        index: {
+        main: {
             show: 'commonShow',
         },
         commonChildComponent1: {

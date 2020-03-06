@@ -13,7 +13,7 @@ class App extends React.Component {
         const { user } = this.props;
         return (
             <div>
-                <div className={styles.title}>{user.index.show}</div>
+                <div className={styles.title}>{user.main.show}</div>
                 <div>
                     <DatePicker />
                 </div>

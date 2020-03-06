@@ -35,12 +35,12 @@ class App extends React.Component {
         return (
             <div>
                 <div className={styles.title}>indexChildComponent1</div>
-                <div className={styles.title}>{index.index.show}</div>
+                <div className={styles.title}>{index.main.show}</div>
                 <div className={styles.title}>
                     {index.indexChildComponent1.show}
                 </div>
-                <div className={styles.title}>{user.index.show}</div>
-                <div className={styles.title}>{common.index.show}</div>
+                <div className={styles.title}>{user.main.show}</div>
+                <div className={styles.title}>{common.main.show}</div>
                 <div>
                     <Button
                         type="primary"
