@@ -1,8 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
 import { Button, DatePicker } from 'antd';
-import IndexChildComponent1 from './components/indexChildComponent1/index.js';
-import CommonChildComponent1 from '@/libs/commonChildComponent1/index.js';
 import styles from './index.less';
 
 @connect(({ common, index, user }) => ({ common, index, user }))
@@ -12,7 +10,7 @@ class App extends React.Component {
     }
 
     onClickButton = async () => {
-        const { dispatch, index } = this.props;
+        const { dispatch, common } = this.props;
         await dispatch({
             type: 'index/getIstopOrderDetail',
             payload: {
@@ -21,11 +19,11 @@ class App extends React.Component {
         });
 
         await dispatch({
-            type: 'index/save',
+            type: 'common/save',
             payload: {
-                index: {
-                    ...index.index,
-                    show: 'indexShow222',
+                commonChildComponent1: {
+                    ...common.commonChildComponent1,
+                    show: 'commonChildComponent1Of222',
                 },
             },
         });
@@ -34,12 +32,14 @@ class App extends React.Component {
     render() {
         let self = this;
         const { common, index, user } = this.props;
-        console.log(index.index.show);
+        console.log(index.show);
         return (
             <div>
-                <div className={styles.title}>{index.index.show}</div>
-                <div className={styles.title}>{user.index.show}</div>
+                <div className={styles.title}>commonChildComponent1</div>
                 <div className={styles.title}>{common.show}</div>
+                <div className={styles.title}>
+                    {common.commonChildComponent1.show}
+                </div>
                 <div>
                     <Button
                         type="primary"
@@ -51,10 +51,6 @@ class App extends React.Component {
                 <div>
                     <DatePicker />
                 </div>
-
-                <IndexChildComponent1 />
-
-                <CommonChildComponent1 />
             </div>
         );
     }
