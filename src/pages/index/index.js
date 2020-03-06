@@ -34,7 +34,6 @@ class App extends React.Component {
     render() {
         let self = this;
         const { common, index, user } = this.props;
-        console.log(index.index.show);
         return (
             <div>
                 <div className={styles.title}>{index.index.show}</div>

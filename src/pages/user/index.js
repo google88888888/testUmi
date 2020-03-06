@@ -11,7 +11,6 @@ class App extends React.Component {
 
     render() {
         const { user } = this.props;
-        console.log(user.index.show);
         return (
             <div>
                 <div className={styles.title}>{user.index.show}</div>

@@ -18,9 +18,6 @@ export default {
     effects: {
         *getIstopOrderDetail(action, { call, put, select }) {
             const { common, index } = yield select(state => state);
-            console.log(common.index.show);
-            console.log(index.show);
-
             const Result = yield call(request.getIstopOrderDetail, {
                 id: action.payload.id,
             });
